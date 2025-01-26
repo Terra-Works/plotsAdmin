@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -48,3 +49,26 @@
     </div>
 </body>
 </html>
+
+<?php
+$requestUri = $_SERVER['REQUEST_URI'];
+
+// Enrutamiento básico de URLs
+switch ($requestUri) {
+    case '/register':
+        // Lógica de registro
+        require './public/register.php';
+        break;
+    case '/login':
+        // Lógica de login
+        require './public/login.php';
+        break;
+    case '/dashboard':
+        // Lógica del dashboard
+        require './public/dashboard.php';
+        break;
+    default:
+        // Página principal o error 404
+        require './index.php';
+        break;
+}
