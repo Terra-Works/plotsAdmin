@@ -42,9 +42,9 @@
     <div class="container">
         <h1>Bienvenido a la Plataforma</h1>
         <p>Selecciona una de las opciones para continuar:</p>
-        <a href="register.php" class="button">Registro</a>
-        <a href="login.php" class="button">Login</a>
-        <a href="dashboard.php" class="button">Dashboard</a>
+        <a href="public/register.php" class="button">Registro</a>
+        <a href="public/login.php" class="button">Login</a>
+        <a href="public/dashboard.php" class="button">Dashboard</a>
     </div>
 </body>
 </html>
