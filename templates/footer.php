@@ -1,7 +1,4 @@
 <!-- footer.php -->
-<?php
-echo "<pre>footer.php cargado correctamente</pre>";
-?>
 <footer>
     <p>&copy; 2025 Mi Plataforma. Todos los derechos reservados.</p>
 </footer>
