@@ -1,6 +1,3 @@
-# Para versiones más recientes de PHP
-AddHandler application/x-httpd-php .php
-
 # To prevent access to .env and other files
 <Files .*>
 # Apache 2.2
