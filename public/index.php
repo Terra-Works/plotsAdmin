@@ -27,17 +27,14 @@ switch ($requestUri) {
 }
 
 // Incluir la cabecera (navbar y contenido común)
-echo "<pre>Incluyendo header.php</pre>"; // Mensaje de depuración
 include '../templates/header.php';
 
 // Incluir el menú lateral si es necesario
-echo "<pre>Incluyendo sidebar.php</pre>"; // Mensaje de depuración
 include '../templates/sidebar.php';
 
 // Incluir la página dinámica
 include $pageContent;
 
 // Incluir el pie de página (footer común)
-echo "<pre>Incluyendo footer.php</pre>"; // Mensaje de depuración
 include '../templates/footer.php';
 
