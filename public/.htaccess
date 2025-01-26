@@ -1,6 +1,4 @@
-# Para versiones más recientes de PHP
-AddHandler application/x-httpd-php .php
- 
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
