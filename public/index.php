@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 // Definir si el menú lateral debe mostrarse
 $showSidebar = false;
 
@@ -24,13 +27,17 @@ switch ($requestUri) {
 }
 
 // Incluir la cabecera (navbar y contenido común)
-include './templates/header.php';
+echo "<pre>Incluyendo header.php</pre>"; // Mensaje de depuración
+include 'templates/header.php';
 
 // Incluir el menú lateral si es necesario
-include './templates/sidebar.php';
+echo "<pre>Incluyendo sidebar.php</pre>"; // Mensaje de depuración
+include 'templates/sidebar.php';
 
 // Incluir la página dinámica
 include $pageContent;
 
 // Incluir el pie de página (footer común)
-include './templates/footer.php';
+echo "<pre>Incluyendo footer.php</pre>"; // Mensaje de depuración
+include 'templates/footer.php';
+

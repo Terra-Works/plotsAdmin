@@ -1,23 +1,23 @@
+<!-- header.php -->
+<?php
+echo "<pre>header.php cargado correctamente</pre>";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mi Plataforma</title>
+    <!-- Aquí puedes poner enlaces a tus CSS o JS -->
 </head>
 <body>
-    <!-- Navbar universal -->
     <header>
         <nav>
+            <!-- Aquí va tu menú o barra de navegación -->
             <ul>
                 <li><a href="home">Home</a></li>
                 <li><a href="login">Login</a></li>
                 <li><a href="register">Register</a></li>
-                <li><a href="dashboard">Dashboard</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="container">
-        <!-- Aquí irá el contenido dinámico -->
