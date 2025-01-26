@@ -1,11 +1,7 @@
-<Directory ./public>
-    AllowOverride All
-</Directory>
-
 RewriteEngine On
 RewriteBase /
 
 # Redirige todas las solicitudes a index.php, excepto si es un archivo o directorio real
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule ^(.*)$ ./public/index.php [QSA,L]
