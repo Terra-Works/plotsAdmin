@@ -1,13 +1,9 @@
-# Redirigir todas las solicitudes a index.php para ser gestionadas por el router
+# Redirigir todas las solicitudes al directorio public
 RewriteEngine On
 
-# Asegurarse de que el RewriteBase sea correcto
-# Si tu aplicación está en una subcarpeta, ajusta esto
-RewriteBase /public/
-
-# No procesar archivos o carpetas reales
+# Si la URL no es un archivo real, redirigir al directorio public
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Redirigir todas las demás solicitudes a index.php
-RewriteRule ^(.*)$ index.php [QSA,L]
+# Redirigir todo al directorio public
+RewriteRule ^(.*)$ public/$1 [L]

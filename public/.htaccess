@@ -1,0 +1,9 @@
+# Activar reescritura de URLs
+RewriteEngine On
+
+# Si la solicitud no corresponde a un archivo o carpeta real
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirigir todas las solicitudes a index.php para gestionar el enrutamiento
+RewriteRule ^(.*)$ index.php [QSA,L]
