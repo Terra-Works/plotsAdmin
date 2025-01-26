@@ -18,8 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "Credenciales incorrectas.";
     }
-
-    include '../templates/footer.php';
 }
 ?>
 <!DOCTYPE html>
@@ -36,3 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 </body>
 </html>
+
+
+<?php
+
+include '../templates/footer.php';
+ 
+?>

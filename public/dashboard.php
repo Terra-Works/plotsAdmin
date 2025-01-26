@@ -14,7 +14,6 @@ $stmt = $pdo->prepare("SELECT * FROM user_data WHERE user_id = ?");
 $stmt->execute([$user_id]);
 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-include '../templates/footer.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,3 +29,10 @@ include '../templates/footer.php';
     <a href="logout.php">Cerrar sesión</a>
 </body>
 </html>
+
+
+<?php
+
+include '../templates/footer.php';
+ 
+?>

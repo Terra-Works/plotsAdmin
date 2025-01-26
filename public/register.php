@@ -15,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Usuario registrado con éxito.";
 }
 
-include '../templates/footer.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,3 +31,10 @@ include '../templates/footer.php';
     </form>
 </body>
 </html>
+
+
+<?php
+
+include '../templates/footer.php';
+ 
+?>
