@@ -12,9 +12,10 @@
         <nav>
             <!-- Aquí va tu menú o barra de navegación -->
             <ul>
-                <li><a href="/home.php">Home</a></li>
-                <li><a href="/login.php">Login</a></li>
-                <li><a href="/register.php">Register</a></li>
+                <li><a href="home">Home</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a href="register">Register</a></li>
+                <li><a href="dashboard">dashboard</a></li>
             </ul>
         </nav>
     </header>
