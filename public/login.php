@@ -1,4 +1,6 @@
 <?php
+include '../templates/header.php';
+
 session_start();
 require '../config/db.php';
 
@@ -16,6 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "Credenciales incorrectas.";
     }
+
+    include '../templates/footer.php';
 }
 ?>
 <!DOCTYPE html>

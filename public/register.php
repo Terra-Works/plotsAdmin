@@ -1,4 +1,7 @@
 <?php
+include '../templates/header.php';
+
+
 require '../config/db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -11,6 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     echo "Usuario registrado con éxito.";
 }
+
+include '../templates/footer.php';
 ?>
 <!DOCTYPE html>
 <html>

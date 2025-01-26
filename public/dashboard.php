@@ -1,4 +1,6 @@
 <?php
+include '../templates/header.php';
+
 session_start();
 require '../config/db.php';
 
@@ -12,6 +14,7 @@ $stmt = $pdo->prepare("SELECT * FROM user_data WHERE user_id = ?");
 $stmt->execute([$user_id]);
 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+include '../templates/footer.php';
 ?>
 <!DOCTYPE html>
 <html>
