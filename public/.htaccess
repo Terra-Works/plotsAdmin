@@ -1,7 +1,7 @@
-<!-- # Para versiones más recientes de PHP
-AddHandler application/x-httpd-php .php -->
+# Para versiones más recientes de PHP
+AddHandler application/x-httpd-php .php
  
-<!-- <IfModule mod_rewrite.c>
+<IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
@@ -24,15 +24,5 @@ AddHandler application/x-httpd-php .php -->
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
-</IfModule> -->
-
-# Activar reescritura de URLs
-RewriteEngine On
-
-# Si la solicitud no corresponde a un archivo o carpeta real
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Redirigir todas las solicitudes a index.php para gestionar el enrutamiento
-RewriteRule ^(.*)$ index.php [QSA,L]
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
