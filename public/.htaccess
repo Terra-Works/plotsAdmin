@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 RewriteEngine On
 RewriteBase /
 
@@ -5,3 +6,12 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [QSA,L]
+=======
+    RewriteEngine On
+    RewriteBase /  # Asegúrate de que la base esté bien configurada
+
+    # Redirigir todas las solicitudes a index.php
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php [QSA,L]
+>>>>>>> origin/main
