@@ -11,18 +11,18 @@ $requestUri = trim($_SERVER['REQUEST_URI'], '/');
 // Establecer el archivo de contenido según la ruta
 switch ($requestUri) {
     case 'login':
-        $pageContent = 'login.php';
+        $pageContent = './login.php';
         break;
     case 'register':
-        $pageContent = 'register.php';
+        $pageContent = './register.php';
         break;
     case 'dashboard':
-        $pageContent = 'dashboard.php';
+        $pageContent = './dashboard.php';
         $showSidebar = true; // Mostrar el menú lateral solo en el dashboard
         break;
     case 'home':
     default:
-        $pageContent = 'home.php';
+        $pageContent = './home.php';
         break;
 }
 
