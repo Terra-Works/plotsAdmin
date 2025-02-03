@@ -10,8 +10,11 @@
 ---
 
 ## 🚀 Características
+
 ✅ **Autenticación segura:** Registro e inicio de sesión de administradores.
+
 ✅ **Gestión de parcelas:** Actualización del estado de las parcelas en tiempo real.
+
 ✅ **Dashboard intuitivo:** Interfaz amigable y moderna para administrar la información.
 
 ---
